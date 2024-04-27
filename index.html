@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <form>
+        <h2 style="opacity: 0.8;">Send Money 💸</h2>
+        <h4 style="opacity: 0.5;">Enter the amount you want to send</h4>
+
+        <div id="container">
+            <div id="select">
+                <input type="radio" id="cad2ngn" name="selection">
+                <label for="cad2ngn">🍁CAD to 🟩NGN</label><br>
+
+                <input type="radio" id="ngn2cad" name="selection">
+                <label for="ngn2cad">🟩NGN to 🍁CAD </label>
+            </div>
+            
+                <div id="sender">
+                    <p><span id="person_1" >You send</span><span style="float: right;">🍁 CAD</span></p><br>
+                    <p id="result1"><input id="currency1" placeholder="0"></p><br><br>
+                </div>
+            
+            
+
+            <div class="rate">
+                <span>📈 1 CAD = 807.0 NGN</span><br>
+                <span>⚡ Within minutes</span>
+            </div>
+
+            
+                <div id="receiver" >
+                    <p><span id="person_2" >Receiver gets</span><span style="float: right;">🟩 NGN</span></p><br>
+                    <p id="result0"><input id="currency2" placeholder="0"></p><br><br>
+                </div>
+
+            <div id="bottom">
+                <input id="note" placeholder = "Add note" ><br><br>
+                <button type="submit" id ="submit" onclick="convert()">Continue</button><br>
+                <p id="result"></p>
+            </div>
+            
+        </div>
+    </form>
+    
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
